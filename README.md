@@ -1,1 +1,2 @@
 # MBKZ
+MBKZ is a lattice reducion algorithms which can be used to optimize basis and search for short vectors in a lattice, here is an implement of MBKZ based on NTL library. Experiment datas with varous dimensions and seeds obtained by the MBKZ algorithm are also provided for duplicate tests.
