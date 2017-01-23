@@ -1,0 +1,23 @@
+Here you can find our experiment datas corresponding different dimensions and seeds, 
+
+files named BKZ_basis_x are starting basis which is ususlly reduced by BKZ_RR with blocksize 10,  datas in BKZ_basis_x are in the following format:
+
+s_1 s_2 s_3 s_4
+[[base_vector_1]
+[base_vector_2]
+...
+[base_vector_n]]
+
+s_1 stands for the norm of the current b_1, s_2 stands for 1.05GH(L) to complete SVPchallenge, 
+s_3 stands for the approximate q, s_4 stands for the time used from the original basis to the current one and x in the name is the basis' seed.
+
+
+
+files named Basis_x are starting basis which is ususlly reduced by BKZ_RR with blocksize 10,  datas in BKZ_basis_x are in the following format:
+
+[base_vector_1] s_1
+[base_vector_2] s_2
+...
+[base_vector_n] s_n
+
+s_1...s_n stand for the norms of the current n base vectors and x in the name is the basis' seed.
