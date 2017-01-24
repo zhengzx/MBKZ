@@ -1,0 +1,1 @@
+The original version has been used to solve SVP challenges up to 121 dimension lattices and is considered to be a stable one though the codes are hard to read due to  the lack of code annotations, while the update version removes redundancy and adds code annotations compared to the original one but still needs more tests to show its robustness.

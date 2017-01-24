@@ -1,0 +1,9 @@
+The implement is based on NTL library, to use MBKZ, add the codes in LLL_FP.c into ntl-x.x.x\src\LLL_FP.c and add the codes in LLL.h into ntl-x.x.x\include\NTL\LLL.h 
+
+
+You can call MBKZ by:
+
+
+long BKZ_FP_MIX(mat_ZZ& BB, double delta, long beta, long prune, LLLCheckFct check, long verb, int cs, char* qr2)
+
+BB, delta, check and verb are the same paraments for BKZ_FP, beta and prune are blocksize and pruning parament which are just for traditional enumeration and cs stands the k for orthogonalized enumeration, besides, qr2 is an index for output files.
