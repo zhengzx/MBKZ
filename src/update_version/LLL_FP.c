@@ -411,10 +411,12 @@ long MBKZ(mat_ZZ& BB, mat_ZZ* UU, double delta,
 								tch[qtch][i][j] = i;
 							}
 							else if(i==1){
-								tch[qtch][i][j] = floor(powf(cbar / (kk - jj + 1) / c[i], 0.5));
+								tch[qtch][i][j] = floor(powf(cbar / (kk - jj + 1) / c[kk], 0.5));
+								if(tch[qtch][i][j]==0) // if initial values exist repetition, an extra addition is called.
+									tch[qtch][i][j]=2;
 							}
 							else if(i==2){
-								tch[qtch][i][j] = ceil(powf(cbar / (kk - jj + 1) / c[i], 0.5));
+								tch[qtch][i][j] = ceil(powf(cbar / (kk - jj + 1) / c[kk], 0.5));
 							}
 						}
 						tch[qtch][i][0] = 0;
@@ -500,7 +502,7 @@ long MBKZ(mat_ZZ& BB, mat_ZZ* UU, double delta,
 									//the three chosen are offerred
 
 
-									if ((abs(abs(ts1 - ((des[t]) - un[t + 1][t])) - 0.5) < 0.1)||(abs(abs(ts2 - (-1 * (des[t]) - un[t + 1][t])) - 0.5) < 0.1) {//not close enough, other chosen will be added					
+									if ((abs(abs(ts1 - ((des[t]) - un[t + 1][t])) - 0.5) < 0.1)||(abs(abs(ts2 - (-1 * (des[t]) - un[t + 1][t])) - 0.5) < 0.1)) {//not close enough, other chosen will be added					
 
 										ts3 = ts1;
 										if ((abs(abs(ts1 - ((des[t]) - un[t + 1][t])) - 0.5) < 0.1)) {
